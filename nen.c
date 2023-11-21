@@ -7,5 +7,5 @@ int main ()
     scanf("%d",&n);
     printf("Hello the number is:%d\n",n);
     return 0;
-
 }
+
