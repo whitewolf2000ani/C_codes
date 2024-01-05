@@ -1,15 +1,9 @@
 #include<stdio.h>
-int increment();
+static int i;
+static int i=90;
+static int i;
 int main(){
-    int value;
-    value=increment();
-    value=increment();
-    value=increment();
-    printf("value:%d",value);
-}
-
-int increment(){
-    static int count;
-    count+=1;
-    return count;
+    static int i=90;
+    printf("%d",i);
+    return 0;
 }
