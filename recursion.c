@@ -1,6 +1,5 @@
 #include<stdio.h>
 int fact(int,int);
-// 1+1/2+1/3+....1/n
 int main(){
     int n,val;
     printf("Enter the number\n");
