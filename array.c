@@ -21,7 +21,7 @@ int main(){
         sum=0;
     }
 
-    sum=0;
+    
     printf("Summation column-wise:\n");
     for(i=0;i<m;i++){
         for(j=0;j<n;j++){
