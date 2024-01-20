@@ -11,7 +11,7 @@ int main(){
         scanf("%d",p);
     }
 
-    for(p=&a[0];p<=&a[n-1];p++){
+    for(p=a;p<=a+(n-1);p++){
         sum+=*p;
     }
 
