@@ -3,7 +3,11 @@ int input(char str[],int n);
 
 int main(){
     char str[100];
-    int n=input(str,5);
+    int size;
+    scanf("%d",&size);
+    //Get char is used in order to consume the newline character in the input buffer which is being picked up by the getchar() function.
+    getchar();
+    int n=input(str,size);
     printf("%d %s",n,str);
     return 0;
 }
