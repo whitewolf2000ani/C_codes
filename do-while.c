@@ -6,7 +6,7 @@ int main(){
     do{
         printf("Enter a number\n");
         scanf("%d",&i);
-        i--;
+        i--; 
         printf("%d\n",i);
     }while(i>0);
     printf("out of do-while loop!");
