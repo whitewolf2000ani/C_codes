@@ -2,10 +2,8 @@
 #include<stdlib.h>
 
 int main(){
-
-  char ch=-127;
-  ch-=2;
-  printf("%d",ch);
-
+  int num=-127;
+  num-=2;
+  printf("%d",num);
   return 0;
 }
