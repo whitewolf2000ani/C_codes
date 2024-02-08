@@ -1,5 +1,5 @@
 int increment(){
- static int count=3;
+ static int count=num;
  count+=1;
  return count;
 }
