@@ -1,5 +1,7 @@
+#include<stdio.h>
+int count;
 int increment(){
- static int count=num;
+ printf("%d\n",count);
  count+=1;
  return count;
 }
