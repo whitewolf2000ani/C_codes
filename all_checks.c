@@ -9,7 +9,6 @@ int main(){
   int num,num_dup;
   printf("Enter a number\n");
   scanf("%d",&num);
-  num_dup=num;
   check_pallindrome(num);
   check_armstrong(num);
   check_strong(num);
@@ -31,7 +30,6 @@ void check_pallindrome(int n){
     printf("\nNot Pallindrome\n");
 }
 
-
 void check_armstrong(int n){
   int og_num=n;
   int n_count=n;
@@ -42,7 +40,7 @@ void check_armstrong(int n){
   }
   int count1=count;
   int rem,sum=0;
-  int mul;
+  int mul=1;
   while(n!=0){
     rem=n%10;
     while(count1!=0){
