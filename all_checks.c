@@ -3,16 +3,19 @@ void check_pallindrome(int n);
 void check_armstrong(int n);
 void check_strong(int n);
 void check_prime(int n);
-
+void BinaryToDecimal(int n);
 
 int main(){
-  int num,num_dup;
+  int num,bin;
   printf("Enter a number\n");
   scanf("%d",&num);
+  printf("Enter a binary number\n");
+  scanf("%d",&bin);
   check_pallindrome(num);
   check_armstrong(num);
   check_strong(num);
   check_prime(num);
+  BinaryToDecimal(bin);
 }
 
 void check_pallindrome(int n){
@@ -92,3 +95,29 @@ void check_prime(int n){
   else
     printf("\nNot a Prime number\n");
 }
+
+void BinaryToDecimal(int n){
+  int rem,deci=0,weight=1;
+  
+  while(n!=0){
+    rem=n%10;
+    deci+=rem*weight;
+    weight*=2;
+    n/=10;
+  }
+
+  printf("\nThe decimal equivalent is %d\n",deci);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
